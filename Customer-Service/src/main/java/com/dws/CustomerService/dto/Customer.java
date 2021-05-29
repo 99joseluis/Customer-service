@@ -1,27 +1,26 @@
 package com.dws.CustomerService.dto;
 
 public class Customer {
-
+	
 	private int id;
 	private String nombre;
 	private String apellidos;
 	private String rfc;
 	private String correo;
-	private Region region;
-	
-	
+	private int id_region;
+
 	public Customer() {
 		super();
 	}
 	
-	public Customer(int id, String nombre, String apellidos, String rfc, String correo, Region region) {
+	public Customer(int id, String nombre, String apellidos, String rfc, String correo, int id_region) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.rfc = rfc;
 		this.correo = correo;
-		this.region = region;
+		this.id_region = id_region;
 	}
 	
 	public int getId() {
@@ -59,11 +58,12 @@ public class Customer {
 		this.correo = correo;
 	}
 	
-	public Region getRegion() {
-		return region;
+	public int getId_Region() {
+		return id_region;
 	}
-	public void setRegion(Region region) {
-		this.region = region;
+	
+	public void setId_Region(int id_region) {
+		this.id_region = id_region;
 	}
 	
 }
